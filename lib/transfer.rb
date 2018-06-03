@@ -35,6 +35,7 @@ class Transfer
       self.sender.balance += self.amount
       self.receiver.balance -= self.amount
       self.status = "reversed"
+    else
   #    @amount = 0
     end
   end
