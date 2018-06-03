@@ -34,6 +34,8 @@ class Transfer
       self.sender.balance += self.amount
       self.receiver.balance -= self.amount
       self.status = "reversed"
+    elsif self.status != "complete"
+      nil
     end
   end
 end
