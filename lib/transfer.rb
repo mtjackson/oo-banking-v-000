@@ -20,7 +20,9 @@ class Transfer
 
   def execute_transaction
     i = 0
-    if self.valid? == true && @sender.balance > @amount && i == 0
+    if self.valid? == true && @sender.balance > @amount
+      i = 0
+      while
       @sender.balance -= @amount
       @receiver.balance += @amount
       #  self.amount = 0
