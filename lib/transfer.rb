@@ -1,5 +1,4 @@
 class Transfer
-#  attr_reader :transfer_id
   attr_accessor :sender, :receiver, :amount, :status
 
   def initialize(sender, receiver, amount)
@@ -7,7 +6,6 @@ class Transfer
     @receiver = receiver
     @amount = amount
     @status = "pending"
-  #  @transfer_id = rand(1..n)
   end
 
   def valid?
